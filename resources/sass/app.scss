@@ -1,0 +1,274 @@
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+html, body{
+    font-weight: 500;
+}
+
+.fs-4{
+    font-size: 1.0rem!important;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav .brand-name{
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.sub-nav {
+    display: none;
+    position: relative !important;
+    background-color: #fff;
+    padding: 17px 0;
+    list-style: none;
+    /* width: 237px; */
+}
+
+.bg-nav{
+    background-color: #FF9743;
+    color: white;
+}
+
+.bg-grey{
+    background-color: #EBEBEB !important;
+}
+
+.btn-fade-yellow{
+    background-color: #FEC254;
+}
+
+#navbarTogglerDemo01 li a {
+    width: 147px;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+}
+
+#navbarTogglerDemo01 li a:hover {
+    background: #FF9843;
+    border-bottom: 2px solid white;
+}
+
+footer .social{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+    font-size: 30px;
+    list-style: none;
+}
+
+footer .social li{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 12px;
+}
+
+footer .footer_link{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 27px 0;
+    gap: 12px;
+    list-style: none;
+}
+
+footer .footer_link a{
+    color: black;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.game-banner, .content-banner{
+    max-width: 746px;
+    margin-left: auto;
+    margin-right: auto;
+    // min-height: 76vh;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.game-banner .content-banner p{
+    margin: 0 0 
+}
+
+.game-banner img{
+    width: 100%;
+}
+
+.game-banner .section-game {
+    background: #FFDFB0;
+    border-radius: 10px;
+    padding: 23px 28px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.game-banner .section-loading {
+    background: white;
+    border-radius: 10px;
+    padding: 23px 28px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.game-banner .section-loading img{
+    width: 200px;
+}
+
+.game-banner .section-game h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 700;
+    color: #144D50;
+}
+
+.game-banner .section-game ul{
+    list-style: none;
+    padding: 0;
+}
+
+.game-banner ul.pagi{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.game-banner ul.pagi li{
+    text-align: center;
+    padding: 3px !important;
+    background-color: transparent;
+    color: black;
+    border-radius: 50%;
+    width: 29px;
+    height: 30px;
+    text-indent: 0%;
+    font-weight: 500;
+}
+
+.outline-btn-yellow{
+    border: 2px solid #FF8647;
+    color: #FF8647 !important;
+    font-weight: 600;
+
+}
+
+.game-banner ul.pagi li.active{
+    background-color: #FF9743;
+    color: white;
+    font-weight: 700;
+}
+
+.game-banner .section-game .rule li{
+    text-indent: -1.3em;
+    padding-left: 1.3em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.game-banner .game-start a{
+    color: #fff;
+    line-height: 39px;
+    padding: 7px 42px;
+    border-radius: 22px;
+    font-size: 18px;
+}
+
+.game-banner .section-game ul.option {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-banner .section-game ul.option li{
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-indent: 0;
+    padding-left: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.game-banner .section-game ul.option li.noimage {
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-indent: 0;
+    padding-left: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.game-banner .section-game ul.option .card:hover{
+    background-color: #ff984375;
+    color: white;
+    cursor: pointer;
+}
+
+table{
+    background-color: white;
+    font-size: 15px;
+
+}
+
+table thead{
+    background-color: #FEECD4;
+}
+
+table th, td{
+    text-align: center;
+}
+
+table th, td svg{
+    width: 20px;
+}
+
+
+@media (max-width: 599px){
+    .game-banner .section-game ul.option li {
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .game-banner ul.pagi {
+        justify-content: center;
+    }
+}
+
+
+
